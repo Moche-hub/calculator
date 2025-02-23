@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+
+button{
+    height:80px;
+    width: 80px;
+    border-radius: 50px;
+    border:none;
+    margin:0.1cm;
+    background-color: rgb(25,25,25);
+    color: white;
+    font-weight: bold;
+    font-size: 0.7cm;
+    font-family: Arial;
+
+}
+.screen{
+    height:50px;
+    width: 350px;
+    font-weight: bold;
+    font-size: 1cm;
+    font-family: Arial;
+    background-color: black;
+    border-color: rgb(139, 210, 198);
+    border: non;
+    color:white;
+}
+.yellowbutton{
+    background-color: rgb(254, 160, 10);
+}
+.box{
+    position: relative;
+    left:1cm;
+    top:0.5cm;
+    border:0.1cm solid white;
+    padding-left:3cm;
+    padding-top:1cm;
+    padding-bottom:0.5cm ;
+    border-radius:1cm;
+    width:13cm;
+    box-shadow: 1px 1px 20px white;
+}

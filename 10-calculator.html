@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="10-calculator.css">
+</head>
+<body>
+    <div class="box">
+    <p>
+        <input class="screen">
+    </p>
+    <p>
+        <button onclick="
+            calc+='1';
+            onscreen();
+            ">1</button>
+
+        <button onclick="
+        calc+='2'
+        onscreen()
+        ">2</button>
+
+        <button onclick="
+        calc+='3';
+        onscreen();
+        ">3</button>
+
+        <button class="yellowbutton" onclick="
+        calc+='+';
+        onscreen()
+        ">+</button>
+    </p>
+
+    <p>
+        <button onclick="
+            calc+='4'
+            onscreen()
+            ">4</button>
+
+        <button onclick="
+        calc+='5'
+        onscreen()
+        ">5</button>
+
+        <button onclick="
+        calc+='6';
+        onscreen()
+        ">6</button>
+
+        <button class="yellowbutton"  onclick="
+        calc+='-';
+        onscreen()
+        ">-</button>
+    </p>
+
+
+    <p>
+        <button onclick="
+        calc+='7'
+        onscreen()
+            ">7</button>
+
+        <button onclick="
+        calc+='8'
+        onscreen()
+        ">8</button>
+
+        <button onclick="
+        calc+='9'
+        onscreen()
+        ">9</button>
+
+        <button class="yellowbutton"  onclick="
+        calc+='*'
+        onscreen()
+        ">x</button>
+    </p>
+
+
+    <p>
+        <button onclick="
+        calc+='0'
+        onscreen()
+            ">0</button>
+
+        <button onclick="
+        calc+='.'
+        onscreen()
+        ">.</button>
+
+        <button onclick="
+        calc=eval(calc);
+        onscreen()
+        ">=</button>
+
+
+        <button class="yellowbutton"  onclick="
+        calc+='/'
+        onscreen()
+        ">/</button>
+    </p>
+    <p>
+        <button onclick="
+            calc=''
+            onscreen()
+            ">Clear</button>
+    </p>
+    <script>
+        let calc=''
+
+        function onscreen(){
+            let ab= document.querySelector('.screen')
+            ab.value=calc
+
+        }
+    </script>
+    </div>
+</body>
+</html>
